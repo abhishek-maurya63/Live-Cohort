@@ -1,0 +1,112 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: #dbdada;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.container{
+    height: 70vh;
+    width: 30vw;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#contact{
+    text-align: center;
+}
+form{
+    padding: 1em;
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form input {
+    width: 95%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #dbdada;
+    border-radius: 5px;
+}
+form textarea {
+    width: 95%;
+    height: 30%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #dbdada;
+    border-radius: 5px;
+    resize: none;
+}
+button {
+    padding: 0.5em 1em;
+    background-color: #57a1da;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1em;
+    padding: 3%;
+    color: white;
+    font-size: large;
+}
+@keyframes hello{
+    0%{
+        scale: .5;
+    }
+    15%{
+        scale: .8;
+    }
+    30%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    65%{
+        scale: 1;
+    }
+    85%{
+        scale: .8;
+    }
+    100%{
+        scale: .5;
+    }
+    
+}
+button{
+    animation: hello 2s infinite ease-in-out;
+}
+button:hover{
+    background-color: #1f4f74;
+    scale: 1.05;
+
+}
+button::before{
+    content: "🤣";
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #57a1da;
+    transition: all 0.5s ease-in-out;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border: 1px solid #57a1da;
+}
+input:active{
+    border: 1px solid #57a1da;
+    box-shadow: 0 0 5px rgba(32, 44, 54, 0.5);
+}
+
