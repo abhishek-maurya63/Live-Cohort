@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  width: 100vw;
+  /* height: 100vh; */
+  background-color: black;
+}
+
+.head {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+  /* font-size: 1em; */
+}
+.head h1 {
+  color: #333;
+  font-size: 2em;
+  font-weight: 700;
+}
+.products {
+  background-color: rgb(95, 95, 160);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(auto, 1fr);
+}
+.product {
+  height: 500px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
