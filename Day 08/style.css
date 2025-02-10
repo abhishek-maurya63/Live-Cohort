@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .images {
+    /* height: 100%; */
+    width: 100%;
+    background-color: bisque;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "a a b c"
+      "a a d e"
+      "f g j j"
+      "h i j j"
+      ;
+  }
+
+  
+  
+  img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+  
+  #image-a {
+    grid-area: a;
+  }
+  
+  #image-b {
+    grid-area: b;
+  }
+  #image-c {
+    grid-area: c;
+  }
+  #image-d {
+    grid-area: d;
+  }
+  #image-e {
+    grid-area: e;
+  }
+  #image-f {
+    grid-area: f;
+  }
+  #image-g {
+    grid-area: g;
+  }
+  #image-h {
+    grid-area: h;
+  }
+  #image-i {
+    grid-area: i;
+  }
+  #image-j {
+    grid-area: j;
+  }
