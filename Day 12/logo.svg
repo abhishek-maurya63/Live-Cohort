@@ -1,0 +1,11 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Overlapping Squares -->
+    <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" stroke-width="1"/>
+    <rect x="35" y="25" width="50" height="50" stroke="black" fill="none" stroke-width="1"/>
+    <rect x="40" y="30" width="50" height="50" stroke="black" fill="none" stroke-width="1"/>
+    <rect x="45" y="35" width="50" height="50" stroke="black" fill="none" stroke-width="1"/>
+    <!-- Small Filled Square -->
+    <rect x="50" y="50" width="10" height="10" fill="black"/>
+    <!-- Text -->
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="24" fill="black" font-weight="bold">FYLLA</text>
+</svg>
