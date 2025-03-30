@@ -6,7 +6,7 @@ function randomColor() {
   let c3 = Math.floor(Math.random() * 100);
   let opacity = Math.random().toFixed(3);
 
-  return `rgba(${c1},${c2},${c3},1)`;
+  return `rgba(${c1},${c2},${c3},${opacity})`;
 }
 
 function transition() {
@@ -15,12 +15,12 @@ function transition() {
 function score() {
   let icrBtn = document.querySelector("#icr");
   let counter = document.querySelector(".counter h1");
-  
+
   icrBtn.addEventListener("click", function () {
     count++;
 
     counter.innerText = count;
-    
+
     if (count >= 0) {
       counter.style.color = "green";
     }
@@ -66,6 +66,9 @@ function repeat() {
     let backGround = document.querySelector("body");
     backGround.style.backgroundColor = randomColor();
     backGround.style.transition = transition();
+
+    let progress = document.querySelector(".progress");
+    progress.style.width = countDown * 10 + "%";
     countDown--;
   }, 1000);
 }
