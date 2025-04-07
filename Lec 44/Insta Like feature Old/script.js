@@ -1,16 +1,17 @@
-let img = document.querySelector("img");
-
 let flag = 0;
+
+const img = document.querySelector("img");
+
 img.addEventListener("dblclick", () => {
   setTimeout(() => {
     if (flag === 0) {
-      img.style.scale = "pop 0.3s ease-in-out forwards";
-      img.setAttribute("id", "liked");
       img.setAttribute("src", "liked heart.png");
+      img.setAttribute("id", "liked");
       flag = 1;
     } else {
-      img.setAttribute("src", "heart.png ");
+      img.setAttribute("src", "heart.png");
+      img.setAttribute("id", "unliked");
       flag = 0;
     }
-  }, 500);
+  }, 200); // reduced to 200ms for better UX
 });
