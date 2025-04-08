@@ -1,0 +1,40 @@
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+div {
+  padding: 20px;
+  border: 2px solid;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+body.light div {
+  background-color: #f4f4f4;
+  border-color: #dcdcdc;
+}
+
+body.dark div {
+  background-color: #333333;
+  border-color: #555555;
+}
